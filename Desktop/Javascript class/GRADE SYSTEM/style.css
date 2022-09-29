@@ -1,0 +1,20 @@
+body{
+    background-image: url(d.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height: 69.5vh;
+}
+.box{
+    height: 269px;
+    width: 30%;
+    margin-top: 200px;
+    font-family: Poppins, sans-serif;
+}
+#disp{
+    height: 45px;
+    margin-left: 70px;
+    font-size: 25px;
+    padding-top: 4px;
+    text-align: center;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRADE SYSTEM</title>
+    <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="phone.css" media="(min-width: 200px) and (max-width:868px)">
+</head>
+<body>
+    <div class="bubbles">
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+        <span class="four"></span>
+        <span class="five"></span>
+        <span class="six"></span>
+        <span class="seven"></span>
+        <span class="seven"></span>
+      </div>
+
+    <div class="box shadow-lg rounded container">
+        <marquee behavior="" direction="right" class="mt-4 fst-italic">Welcome to the official grading page</marquee>
+        <h1 class="text-decoration-underline text-center pt-2">GRADING SYSTEM</h1>
+            <div class="d-flex mt-3 ms-4 ">
+                <input type="number" placeholder="Enter your score" id="score" class="p-1 fs-5 rounded-start">
+                <button class="btn btn-success p-2 fs-4 " onclick="check()">Check</button>
+            </div>
+    
+        <div id="disp" class="w-50 mt-2 bg-light rounded"></div>
+    </div>
+    <script>
+        var song = new Audio("excellent.wav")
+        var song2 = new Audio("good.wav")
+        var song3 = new Audio("credit.mp3")
+        var song4 = new Audio("average.mp3")
+        var song5 = new Audio("fail.m4a")
+        var song6 = new Audio("invalid.m4a")
+
+
+        function check(){
+            var myScore = score.value
+            if(myScore >= 70 && myScore <=100){
+            disp.innerText ="A-Excellent"
+            disp.style.color = "green"
+            song.play()
+        } 
+           else if(myScore >= 60 && myScore <70){
+            disp.innerText ="B-Good"
+            disp.style.color = "green"
+            song2.play()
+           }
+           else if(myScore >= 50 && myScore <60){
+            disp.innerText ="C-Credit"
+            disp.style.color = "yellow"
+            song3.play()
+           }
+           else if(myScore >= 45 && myScore <50){
+            disp.innerText ="D-Average"
+            disp.style.color = "orange"
+            song4.play()
+           }
+           else if(myScore >0 && myScore <45){
+            disp.innerText ="F-Fail"
+            disp.style.color = "red"
+            song5.play()
+           }
+           else if(myScore==""){
+             disp.innerText ="Enter a score"
+             disp.style.color = "red"
+           }
+           else{
+            disp.innerText ="INVALID"
+            disp.style.color = "red"
+            song6.play()
+            }
+    }
+    </script>
+</body>
+</html>

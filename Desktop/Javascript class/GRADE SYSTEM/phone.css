@@ -1,0 +1,59 @@
+body{
+    background: rgb(232,122,217);
+    background: linear-gradient(0deg, rgba(232,122,217,1) 0%, rgba(141,147,231,1) 92%);
+    height: 70vh; 
+    overflow: hidden;
+}
+.box{
+    box-sizing: border-box;
+    width: 100%;
+}
+.bubbles {
+    position: absolute;
+    bottom: -120px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    width: 100%;
+    justify-content: space-around;
+}
+.bubbles span {
+    height: 60px;
+    width: 60px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.1);
+    animation: 10s linear 0s infinite normal none running move;
+    overflow: hidden;
+}
+.bubbles span.one {
+    animation-delay: 2.2s;
+    transform: scale(2.15);
+}
+.bubbles span.two {
+    animation-delay: 3.5s;
+    transform: scale(1.55);
+}
+.bubbles span.three {
+    animation-delay: 0.2s;
+    transform: scale(0.35);
+}
+.bubbles span.four {
+    animation-delay: 6s;
+    transform: scale(2.15);
+}
+.bubbles span.five {
+    animation-delay: 7s;
+    transform: scale(0.5);
+}
+.bubbles span.six {
+    animation-delay: 4s;
+    transform: scale(2.5);
+}
+.bubbles span.seven {
+    transform: scale(1.5);
+}
+@keyframes move{
+    100% {
+        transform: translateY(-100vh);
+    }
+}
