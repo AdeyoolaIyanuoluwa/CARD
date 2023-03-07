@@ -1,0 +1,16 @@
+body{
+  background-image: url("/src/images/quiz-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container{
+  /* background-color: #082151; */
+  width: 50%;
+  height: 70vh;
+  margin-top: 15vh;
+  padding-top: 80px;
+  color: white;
+}
+.que{
+  background-color: blue;
+}
