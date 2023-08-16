@@ -1,0 +1,30 @@
+.inputs{
+    outline: none;
+    border: none;
+    /* border: thin solid black; */
+    min-width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: large;
+    border-radius: 50px;
+    /* background: transparent; */
+}
+/* .secondinput{
+    outline: none;
+    border: none;
+    min-width: 50%;
+    height: 300px;
+    padding: 12px 20px;
+
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: large;
+    border-radius: 50px;
+} */
+/* input:invalid{
+    border: 2px solid rgb(221, 162, 162);
+} */
+input:valid{
+    border: 2px solid green;
+}
